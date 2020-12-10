@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  background: coral;
+}
+
+.header > * {
+  color: white;
+
+}
+
+.headerTurn{
+  padding: 12px;
+}
+
+.headerStatus{
+  padding: 12px;
+  flex-grow: 1;
+  text-align: center; 
+}
+
+.board{
+  display: grid;
+  background: white;
+  gap: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+}
+
+
+.boardTile{
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  font-family: cursive;
+  color: black;
+}
+
+.boardTile:hover{
+  background-color: gray;
+}
+
+.boardTileWinner{
+  color: coral;
+}
